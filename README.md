@@ -1,5 +1,6 @@
 # webProgramming
 2022-selfStudy-webProgramming
+* html 열어서 Ctrl + U 누르면 소스코드 볼 수 있음
 
 ### [HTML/CSS]
   * 참조 : https://www.youtube.com/watch?v=tZooW6PritE&list=PLuHgQVnccGMDZP7FJ_ZsUrdCGH68ppvPb
