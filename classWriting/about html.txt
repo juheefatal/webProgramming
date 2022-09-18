@@ -1,0 +1,52 @@
+HTML/CSS
+
+· HTML문서 최상단에 문서의 형식을 지정. <!doctype html>
+· <html>요소 안에 <head>요소와 <body>요소가 존재
+· HTML문서에 적을 코드들은 <html></html>태그로 감싸주어야 함. html문서의 최상위 요소.
+· <html>요소의 내부에는 크게 head요소와 body요소가 존재.
+	- head요소 : <head></head>태그로 감싸져 있으며 작성할 html문서 정보 표현
+	- body요소 : <body></body>태그로 감싸져 있으며 viewport에 표시될 요소 작성
+· <head>요소
+	- <meta>요소 : HTML문서의 메타정보 설정. 여기에 문자 인코딩 정보도 기입
+			<meta charset="utf-8">
+	- <title> 요소 : HTML문서의 제목 설정. tab부분에 표시됨
+· <body>요소
+	- <h1>~<h6> : viewport에 표시될 요소의 제목 표현. 숫자가 커질수록 폰트크기 작아짐
+	- <p> : paragraph표현. 단락표현위한 태그. 단락간에는 정해진 여백만큼 적용되어 출력됨
+	- <br> : break. 강제개행 위한 태그. text간 줄바꿈 수행
+	- <a> : hyperlink표현. 특정 문구 클릭시 외부 다른 사이트로 이동할 수 있도록 함
+		어디로 이동하고 싶은지 href=" … " ← 큰따옴표 안에 이동할 곳의 주소 기입
+
+	- <ul> : unordered list. 목차 생성시 번호매김 하지 않고 리스트 생성하도록 함. <li>부모태그
+	- <ol> : ordered list. 목차생성시 번호매김하며 리스트 생성하도록 함. <li>부모태그
+	- <li> : list. 본격적인 목차생성을 위해 사용하는 태그. 연관된 목차들끼리 grouping하기 위함
+	- <dl> : difinition list. 정의목록 생성. 내부에 <dt>, <dd>요소 존재
+	- <dt> : difinition term. 용어 표현
+	- <dd> : difinition description. 정의 설명
+
+	- <table> : table. 표 생성
+	- <thead> : 여러 제목들 묶음
+	- <tr> : table rows. 표의 행 생성
+	- <th> : table header. 표의 제목 표현
+	- <tbody> : body rows. 본문 행들을 묶음. 생략 불가능!! 꼭 작성해주어야 함
+	- <td> : table data. 표의 본문 데이터들
+
+	- <form> : 입력양식(form)표현
+	- <action> : 입력양식에 맞게 데이터 보낼 곳 URL기입
+	- <method> : 사용자가 입력한 데이터들을 보낼 방법 기입
+
+	- <img> : image. viewport에 이미지를 삽입해줌. 어떤 이미지 삽입하고 싶은지
+		src=" … " ← 큰따옴표 안에 이미지 파일 명(확장자까지)기입하면 됨
+
+… 다양한 또 다른 tag들 존재
+
+· Input양식과 input속성
+	- 입력할 다양한 요소들을 기입
+	- type : 입력할 요소의 형태	ex) type="text" : 한줄 입력할 수 있도록 할 것
+				ex) text, checkbox, file, reset, select, …
+	- name : 입력할 요소들을 잘 구분할 수 있게 식별자 붙임	ex) ID, password, …
+
+- html파일이 인코딩되어있는 방식과 브라우저가 인코딩 하는 방식이 다를 경우 viewport에 표시되어야 할 한글들이 깨져서 나타나기 때문에 인코딩 방식 통일할 수 있도록 <meta charset="utf-8"> 이렇게 인코딩 방식 기입해주어야 함.
+- euc-kr, UTF-8, 등 다양한 인코딩 방식이 있는데 그 중에서 UTF-8을 가장 보편적으로 사용.
+
+
